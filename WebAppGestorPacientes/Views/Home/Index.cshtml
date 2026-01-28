@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    @section Styles {
+        <link rel="stylesheet" href="~/css/home.css" />
+    }
+}
+<body>
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="hero-title">
+                        Tu Salud, Nuestra Prioridad
+                    </h1>
+                    <p class="hero-subtitle">
+                        Agenda tus citas médicas de forma rápida y sencilla. Conectamos pacientes con los mejores especialistas en tiempo real.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-appointment">
+                            <i class="bi bi-calendar-check me-2"></i>
+                            Agendar Cita Ahora
+                        </button>
+                        <button class="btn btn-learn-more">
+                            Saber Más
+                        </button>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="row">
+                            <div class="col-4 stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Médicos</span>
+                            </div>
+                            <div class="col-4 stat-item">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Pacientes</span>
+                            </div>
+                            <div class="col-4 stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Satisfacción</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                    <div class="hero-image position-relative">
+                        <!-- Ilustración SVG de doctor -->
+                        <svg class="doctor-illustration" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Fondo circular -->
+                            <circle cx="250" cy="250" r="200" fill="rgba(255,255,255,0.2)" />
+                            <circle cx="250" cy="250" r="150" fill="rgba(255,255,255,0.3)" />
+
+                            <!-- Doctor -->
+                            <ellipse cx="250" cy="320" rx="80" ry="100" fill="white" />
+                            <circle cx="250" cy="200" r="50" fill="#FFD4B8" />
+                            <rect x="210" y="250" width="80" height="100" rx="10" fill="white" />
+                            <path d="M 220 270 Q 250 280 280 270" stroke="#DC143C" stroke-width="3" fill="none" />
+
+                            <!-- Estetoscopio -->
+                            <path d="M 230 300 Q 230 330 250 340" stroke="#DC143C" stroke-width="4" fill="none" />
+                            <circle cx="250" cy="345" r="8" fill="#DC143C" />
+
+                            <!-- Cabello -->
+                            <path d="M 200 190 Q 200 160 230 165 Q 250 160 270 165 Q 300 160 300 190" fill="#333" />
+
+                            <!-- Ojos -->
+                            <circle cx="235" cy="200" r="4" fill="#333" />
+                            <circle cx="265" cy="200" r="4" fill="#333" />
+
+                            <!-- Cruz médica -->
+                            <rect x="380" y="120" width="15" height="50" rx="3" fill="white" />
+                            <rect x="365" y="135" width="45" height="15" rx="3" fill="white" />
+                        </svg>
+
+                        <!-- Tarjetas flotantes -->
+                        <div class="floating-card card-1">
+                            <div class="feature-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">Citas 24/7</h6>
+                            <p class="mb-0 small text-muted">Disponible siempre</p>
+                        </div>
+
+                        <div class="floating-card card-2">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h6 class="fw-bold mb-1">100% Seguro</h6>
+                            <p class="mb-0 small text-muted">Datos protegidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+  
