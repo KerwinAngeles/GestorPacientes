@@ -1,5 +1,7 @@
 using GestorPacientes.Infrastructure.Persistence;
 using GestorPacientes.Core.Application;
+using GestorPacientes.Infrastructure.Persistence.Seeds;
+using GestorPacientes.Infrastructure.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,12 @@ builder.Services.AddApplicationLayer();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
-
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    AdministratorSeed.Seed(dbContext);
+    AssistantSeed.Seed(dbContext);
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

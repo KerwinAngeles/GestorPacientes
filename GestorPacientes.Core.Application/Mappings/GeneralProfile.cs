@@ -46,7 +46,6 @@ namespace GestorPacientes.Core.Application.Mappings
                 .ForMember(dest => dest.LastModifiedBy, opt => opt.Ignore());
 
             CreateMap<Patient, SavePatientsViewModel>()
-               .ForMember(dest => dest.File, opt => opt.Ignore())
                .ReverseMap()
                .ForMember(dest => dest.Created, opt => opt.Ignore())
                .ForMember(dest => dest.CreatedBy, opt => opt.Ignore())

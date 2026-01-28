@@ -43,9 +43,5 @@ namespace GestorPacientes.Core.Application.ViewModels.Patients
         [Required(ErrorMessage = "You must enter if you are allergy!!")]
         [DataType(DataType.Text)]
         public string? IsAllergy { get; set; }
-        public string? Photo { get; set; }
-
-        [DataType(DataType.Upload)]
-        public IFormFile? File { get; set; }
     }
 }

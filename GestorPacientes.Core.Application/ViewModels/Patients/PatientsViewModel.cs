@@ -19,7 +19,6 @@ namespace GestorPacientes.Core.Application.ViewModels.Patients
         public DateTime BirthDate { get; set; }
         public string? IsSmoker { get; set; }
         public string? IsAllergy { get; set; }
-        public string? Photo { get; set; }
 
         public ICollection<MedicalAppointmentViewModel> Appointments { get; set; } = null!;
         public ICollection<LaboratoryTestResultViewModel> Tests { get; } = null!;

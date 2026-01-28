@@ -15,7 +15,6 @@ namespace GestorPacientes.Core.Domain.Entities
         public DateTime BirthDate { get; set; }
         public string? IsSmoker { get; set; }
         public string? IsAllergy { get; set; }
-        public string? Photo { get; set; } 
 
         // Navigation Property 
         public ICollection<MedicalAppointment> Appointments { get; set; } = null!;

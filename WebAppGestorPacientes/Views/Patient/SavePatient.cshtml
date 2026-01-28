@@ -24,18 +24,6 @@
                     </div>
                     
                     <div class="mb-1">
-                        <label asp-for="File" class="form-label">File: </label>
-                        @if (editModo)
-                        {
-                            <input  asp-for="File" class="form-control bg-white text-dark" />
-                        }
-                        else
-                        {
-                            <input required asp-for="File" class="form-control bg-white text-dark" />
-                        }
-
-                    </div>
-                    <div class="mb-1">
                         <label asp-for="Phone" class="form-label">Phone: </label>
                         <input asp-for="Phone" class="form-control bg-white text-dark" placeholder="Phone" />
                         <span asp-validation-for="Phone" class="text-danger"></span>

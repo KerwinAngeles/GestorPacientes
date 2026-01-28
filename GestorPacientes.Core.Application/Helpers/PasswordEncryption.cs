@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GestorPacientes.Core.Application.Helpers
 {
-    public class PasswordEncryption
+    public  class PasswordEncryption 
     {
         public static string ComputeSha256(string password)
         {

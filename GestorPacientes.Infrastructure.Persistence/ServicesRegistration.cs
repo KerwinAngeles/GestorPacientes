@@ -1,6 +1,7 @@
 ﻿using GestorPacientes.Core.Application.Interfaces.Repositories;
 using GestorPacientes.Infrastructure.Persistence.Context;
 using GestorPacientes.Infrastructure.Persistence.Repositories;
+using GestorPacientes.Infrastructure.Persistence.Seeds;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,7 +38,6 @@ namespace GestorPacientes.Infrastructure.Persistence
             services.AddTransient<ILaboratoryTestRepository, LaboratoryTestsRepository>();
             services.AddTransient<IMedicalAppointmentRepository, MedicalAppointmentRepository>();
             services.AddTransient<ILaboratoryTestResultRepository, LaboratoryTestResultRepository>();
-
             #endregion
         }
     }
